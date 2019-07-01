@@ -3,4 +3,4 @@
 - npm install
 - npm run dev
 
-<img width="200" alt="portfolio_view" src="https://tinyurl.com/n4gtql8">
+![test image size](/img/post-bg-2015.jpg){:height="700px" width="400px"}

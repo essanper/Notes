@@ -13,3 +13,11 @@ The Stack MERN, have a objective: create modern web application with JavaScript 
 
 I try create Single Page Application using ReactJS.
 This application is hosted a server NodeJS and use Express like Framework for the server and MongoDB like database
+
+
+DOCUMENTATION ---
+
+INSTALL MONGODB:
+https://medium.com/@LondonAppBrewery/how-to-download-install-mongodb-on-windows-4ee4b3493514
+
+

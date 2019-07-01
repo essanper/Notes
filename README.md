@@ -3,7 +3,7 @@
 - npm install
 - npm run dev
 
-![alt text](hhttps://binaryinformatics.com/wp-content/uploads/2019/01/MERN-Stack-Development-and-Consulting-Services.jpg)
+![alt text](https://binaryinformatics.com/wp-content/uploads/2019/01/MERN-Stack-Development-and-Consulting-Services.jpg)
 
 This is a personal proyect.
 

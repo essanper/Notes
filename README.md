@@ -3,4 +3,4 @@
 - npm install
 - npm run dev
 
-![](https://avatars3.githubusercontent.com/u/31112269?v=4&s=200)
+![](https://www.troopsf.com/file/mongodb-logo.png?s=200)

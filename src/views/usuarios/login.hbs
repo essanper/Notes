@@ -1,0 +1,38 @@
+<div class="col-11 col-sm-11 col-md-11 col-lg-8 col-xl-7 mx-auto">
+  <div class="card">
+    <div class="card-header text-center">
+      <h3 class="texto_titulo">iniciar sesión</h3>
+    </div>
+    <i class="fas fa-user-alt fa-10x text-center mt-3"></i>
+    <div class="card-body">
+      <form action="/usuario/login" method="POST">
+
+        <div class="input-group my-3"><!-- NOMBRE USUARIO -->
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </span>
+          </div>
+          <input type="text" class="form-control texto_normal" name="usuario_nombre"
+          maxlength="16"
+          placeholder="nombre del usuario" aria-describedby="basic-addon1" required>
+        </div>
+
+        <div class="input-group my-3"><!-- CONTRASEÑA -->
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="fas fa-key"></i>
+            </span>
+          </div>
+          <input type="password" class="form-control texto_normal" name="password"
+          maxlength="16"
+          placeholder="contraseña del usuario" aria-describedby="basic-addon1" required>
+        </div>
+
+        <button type="submit" class="btn btn-info btn-block texto_boton">
+          conectarse
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

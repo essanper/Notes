@@ -1,0 +1,68 @@
+{{#each notas}}
+  {{#if video_nota}}<!-- SI TIENE VIDEO ESTA NOTA-->
+  <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/{{video_nota}}"
+      frameborder="0"  height="300" allow="accelerometer; autoplay; encrypted-media;
+      gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <div class="card-body">
+        <div class="text-center mx-auto my-2">
+          <span class="badge badge-pill badge-primary" style="border-radius:50px">
+            Fecha de creación: {{fecha_nota_vista}}
+          </span>
+        </div>
+        <h4 class="texto_titulo d-flex justify-content-between align-items-center">
+          {{titulo_nota}}
+          <a href="/notas/editar/{{_id}}"><i class="fas fa-edit"></i></a>
+        </h4>
+        <p>{{descripcion_nota}}</p>
+        <form action="/notas/eliminar/{{_id}}?_method=DELETE" method="POST">
+          <input type="hidden" name="_method" value="DELETE">
+          <button type="submit" class="btn btn-danger btn-block texto_boton d-flex
+          justify-content-between align-items-center">
+            ELIMINAR <i class="fas fa-trash-alt"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  {{else}} <!-- SI NO TIENE VIDEO ESTA NOTA-->
+  <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+    <div class="card">
+      <div class="card-header text-center">
+        <h4 class="texto_titulo d-flex justify-content-between align-items-center">
+          {{titulo_nota}}
+          <a href="/notas/editar/{{_id}}"><i class="fas fa-edit"></i></a>
+        </h4>
+      </div>
+      <div class="card-body">
+        <div class="text-center mx-auto my-2">
+          <span class="badge badge-pill badge-primary" style="border-radius:50px">
+            Fecha de creación: {{fecha_nota_vista}}
+          </span>
+        </div>
+        <p>{{descripcion_nota}}</p>
+        <form action="/notas/eliminar/{{_id}}?_method=DELETE" method="POST">
+          <input type="hidden" name="_method" value="DELETE">
+          <button type="submit" class="btn btn-danger btn-block texto_boton
+          d-flex justify-content-between align-items-center">
+            ELIMINAR <i class="fas fa-trash-alt"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+{{else}}
+<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 mx-auto">
+  <div class="jumbotron mx-auto">
+    <h1 class="text-center texto_titulo">Hola {{user.usuario_nombre}}</h1><br />
+    <p class="lead texto_normal">De momento no tienes ninguna tarea pendiente a realizar.<br />
+      Crea una nueva tarea cuando quieras, pulsando el botón <b class="texto_boton">AGREGAR NOTA</b>.</p>
+    <a href="/notas/agregar" style="border: black 1px solid" class="btn btn-success texto_boton">
+      AGREGAR NOTA
+    </a>
+  </div>
+</div>
+{{/each}}

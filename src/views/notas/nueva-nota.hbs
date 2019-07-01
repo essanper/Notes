@@ -1,0 +1,33 @@
+
+<div class="col-11 col-sm-11 col-md-11 col-lg-8 col-xl-7 mx-auto">
+  <div class="card">
+    <div class="card-header text-center">
+      <h3 class="texto_titulo">NUEVA NOTA</h3>
+    </div>
+    <i class="far fa-10x fa-id-card text-center mt-3"></i>
+    <div class="card-body">
+      <form action="/notas/nueva-nota" method="POST">
+        <div class="form-group">
+          <input type="text" class="form-control texto_normal" name="titulo_nota"
+          maxlength="13" value="{{titulo_nota}}"
+          placeholder="titulo de la tarea" required
+          autofocus>
+        </div>
+        <div class="form-group">
+          <textarea name="descripcion_nota" class="form-control texto_normal"
+          maxlength="140" placeholder="descripción de la tarea"
+          required>{{descripcion_nota}}</textarea>
+        </div>
+        <hr class="light">
+        <h3 class="texto_titulo">Opcional:</h3>
+        <p class="texto_normal">Introduce un video a tu nota/tarea/recordatorio, con un enlace facilitado por youtube, desde su opción compartir.</p>
+        <div class="form-group">
+          <input type="text" name="video_nota" class="form-control" placeholder="https://youtu.be/0GAVvYrXH2Q">
+        </div>
+        <button type="submit" class="btn btn-info btn-block texto_boton">
+          AGREGAR <i class="fas fa-plus"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

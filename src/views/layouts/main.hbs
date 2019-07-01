@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>APP Notas</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Font Style -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan:700" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="wrapper">
+      {{> navegacion}}
+
+      <div class="container-fluid " id="middle-zone">
+        <div class="row">
+          <div class="col-12 mx-auto">
+            {{> mensajes-flash}}
+            {{> errores-flash}}
+          </div>
+
+          {{{ body }}}
+        </div>
+      </div>
+
+      {{> footer}}
+    </div>
+
+    <!-- JS, Popper.js and JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

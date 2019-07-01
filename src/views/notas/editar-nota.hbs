@@ -1,0 +1,31 @@
+<div class="col-11 col-sm-11 col-md-11 col-lg-8 col-xl-7 mx-auto">
+  <div class="card">
+    <div class="card-header text-center">
+      <h3 class="texto_titulo">EDITAR NOTA</h3>
+    </div>
+    <i class="fas fa-10x fa-chalkboard-teacher text-center mt-3"></i>
+    <div class="card-body">
+      <form action="/notas/editar-nota/{{editarNota._id}}?_method=PUT" method="POST">
+        <input type="hidden" name="_method" value="PUT"> <!-- OVERRIDE CREADO PARA PERMITIR EL PUT/DELETE-->
+        <div class="form-group">
+          <input type="text" class="form-control texto_normal" name="titulo_nota"
+          value="{{editarNota.titulo_nota}}" placeholder="titulo de la tarea"
+          maxlength="13" required autofocus>
+        </div>
+        <div class="form-group">
+          <textarea name="descripcion_nota" class="form-control texto_normal"
+          placeholder="descripción de la tarea" maxlength="140" required>{{editarNota.descripcion_nota}}</textarea>
+        </div>
+        {{#if editarNota.video_nota}}
+          <div class="form-group">
+            <input type="text" class="form-control texto_normal" name="video_nota"
+            value="https://youtu.be/{{editarNota.video_nota}}" placeholder="video de la tarea" required>
+          </div>
+        {{/if}}
+        <button type="submit" class="btn btn-success btn-block texto_boton">
+          EDITAR <i class="fas fa-edit"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

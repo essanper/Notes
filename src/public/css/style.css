@@ -1,0 +1,119 @@
+body {
+  background: #41295a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.texto_titulo {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.fa-id-card, .fa-user-plus, .fa-user-alt {
+  color: #9954BB;
+}
+
+.texto_boton {
+  font-family: 'Righteous', cursive;
+  text-transform: uppercase;
+}
+
+.texto_normal {
+  font-family: 'Sanchez', serif;
+}
+
+.fa-chalkboard-teacher {
+  color: #3FB618;
+}
+
+.texto_navbar_link {
+  font-family: 'Kodchasan', sans-serif;
+  color:black;
+}
+
+.texto_navbar_link:hover {
+  color:#9954BB;
+  font-weight: bold;
+}
+
+.texto_navbar {
+  font-family: 'Kodchasan', sans-serif;
+}
+
+body, html {
+  margin:0;
+  padding:0;
+  height:100%;
+  min-width: 641px;
+}
+
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+#middle-zone {
+  padding-bottom:100px;
+}
+
+#footer-zone {
+  width:100%;
+  height: 30px;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+.fa-facebook:hover {
+  color: #425F9C;
+}
+
+.fa-twitter:hover {
+  color: #1B95E0
+}
+
+.fa-linkedin:hover {
+  color: #007BB6;
+}
+
+.fa-youtube:hover {
+  color: #DC0000;
+}
+
+a:hover{
+  text-decoration:none;
+  color:black;
+}
+
+a {
+  color: black;
+}
+
+.btn_numeros {
+  text-align:center;
+  border:none
+}
+
+.tabla_todas_notas tr, td, thead, th {
+  border: black 2px solid;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabla_todas_notas thead, th {
+  background: #EFEFEF;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.tabla_todas_notas tbody, td {
+  background: #9954BB;
+  color: white;
+}
+
+.logo_youtube {
+  width: auto;
+  height: 50px;
+}

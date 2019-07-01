@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg bg-light mb-3 texto_normal sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand texto_navbar" >APP Notas</a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link texto_navbar_link" href="/"><i class="fas fa-2x fa-home"></i></a>
+        </li>
+      </ul>
+
+      <button class="navbar-toggler" type="button" name="button" data-toggle="collapse" data-target="#navbarResponsive" style="border: black 2px solid;">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          {{#if user}}
+            <li class="nav-item">
+              <a class="nav-link texto_navbar_link" href="/notas/tabla-notas">Notas creadas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto_navbar_link" href="/notas/agregar">Agregar nota</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto_navbar_link" href="/notas">Mis notas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto_navbar_link" href="/usuario/logout">Cerrar sesión <i class="fas fa-power-off"></i></a>
+            </li>
+          {{else}}
+            <li class="nav-item">
+              <a class="nav-link texto_navbar_link" href="/usuario/login"><i class="fas fa-sign-in-alt"></i> Iniciar sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto_navbar_link" href="/usuario/registro">Registro</a>
+            </li>
+          {{/if}}
+        </ul>
+      </div>
+  </div>
+</nav>

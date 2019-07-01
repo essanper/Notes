@@ -1,0 +1,31 @@
+<table class="table tabla_todas_notas table-ligth col-11 mx-auto texto_normal">
+  <thead>
+    <tr >
+      <th>Titulo nota</th>
+      <th> Descripción nota</th>
+      <th>Día creada</th>
+      <th>Día eliminada</th>
+      <th>Vídeo nota (Opcional)</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each notas}}
+    <tr>
+      <td scope="row">{{titulo_nota}}</td>
+      <td>{{descripcion_nota}}</td>
+      <td>{{fecha_nota_vista}}</td>
+      <td>{{fecha_eliminada_nota_vista}}</td>
+      {{#if video_nota}}
+        <td>
+          <a href="https://www.youtube.com/watch?v={{video_nota}}" target="_blank">
+            <img class="logo_youtube" src="{{_dirname}}/imagenes/youtube.png"><br/>
+          </a>
+            Ver video
+        </td>
+        {{else}}
+        <td>No tiene vídeo</td>
+      {{/if}}
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

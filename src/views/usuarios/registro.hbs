@@ -1,0 +1,52 @@
+<div class="col-11 col-sm-11 col-md-11 col-lg-8 col-xl-7 mx-auto">
+  <div class="card">
+    <div class="card-header text-center">
+      <h3 class="texto_titulo">nuevo usuario</h3>
+    </div>
+    <i class="fas fa-10x fa-user-plus text-center mt-3"></i>
+    <div class="card-body">
+      <form action="/usuario/registro" method="POST">
+
+        <div class="input-group my-3"><!-- NOMBRE USUARIO -->
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="fa fa-user" aria-hidden="true">
+              </i>
+            </span>
+          </div>
+          <input type="text" class="form-control texto_normal" name="usuario_nombre"
+          maxlength="16" value="{{usuario_nombre}}"
+          placeholder="nombre del usuario" aria-describedby="basic-addon1" required>
+        </div>
+
+        <div class="input-group my-3"><!-- CONTRASEÑA -->
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="fas fa-lock"></i>
+              </i>
+            </span>
+          </div>
+          <input type="password" class="form-control texto_normal" name="password"
+          maxlength="16" value="{{password}}"
+          placeholder="contraseña del usuario" aria-describedby="basic-addon1" required>
+        </div>
+
+        <div class="input-group my-3"> <!-- CONTRASEÑA 2-->
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="fas fa-lock"></i>
+              </i>
+            </span>
+          </div>
+          <input type="password" class="form-control texto_normal" name="password_2"
+          maxlength="16" value="{{password_2}}"
+          placeholder="repetir contraseña del usuario" aria-describedby="basic-addon1" required>
+        </div>
+
+        <button type="submit" class="btn btn-info btn-block texto_boton">
+          registrarse
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

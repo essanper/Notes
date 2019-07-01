@@ -20,7 +20,3 @@ This application is hosted a server **NodeJS** and use **Express** like Framewor
 How install MongoDB?:
 
 https://medium.com/@LondonAppBrewery/how-to-download-install-mongodb-on-windows-4ee4b3493514
-
-Learn ReactJS:
-
-https://es.reactjs.org/tutorial/tutorial.html
